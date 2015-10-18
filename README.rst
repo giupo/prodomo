@@ -4,7 +4,7 @@ prodomo
 
 .. image:: https://badge.fury.io/py/prodomo.png
     :target: http://badge.fury.io/py/prodomo
-    
+
 .. image:: https://travis-ci.org/giupo/prodomo.png?branch=master
         :target: https://travis-ci.org/giupo/prodomo
 
@@ -21,3 +21,6 @@ Features
 --------
 
 * TODO
+ * Gestire autorizzazione OATH (Google e Facebook)
+ * Costruire API REST per gestione interruttori su RPi
+ * gestire listener broadcast per servizio di discovery del servizio su RPi
