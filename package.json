@@ -1,6 +1,6 @@
 {
   "name": "prodomo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Prodomo web frontend",
   "main": "index.js",
   "repository": "git@bitbucket.org:giupo/prodomo.git",
