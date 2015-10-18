@@ -21,6 +21,6 @@ Features
 --------
 
 * TODO
- * Gestire autorizzazione OATH (Google e Facebook)
+ * Gestire autorizzazione OAuth (Google e Facebook)
  * Costruire API REST per gestione interruttori su RPi
  * gestire listener broadcast per servizio di discovery del servizio su RPi
