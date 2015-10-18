@@ -17,18 +17,35 @@ settings = {
     'debug': True
 }
 
+
+class SwitchHandler(tornado.web.RequestHandler):
+    "Handler degli switch"
+    def get(self):
+        pass
+
+    def post(self):
+        pass
+
+    def put(self):
+        pass
+
+    def delete(self):
+        pass
+
 class ProdomoAPIHandler(tornado.web.RequestHandler):
     pass
 
 static_content = glob.glob(content_path + '/*')
-
+log.debug("here your static content: " + str(static_content))
 
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self, what):
-        log.info("here your static content: " + str(static_content))
         if what is None or len(what) == 0:
             what = 'index.html'
+
+        if what.endswith(".html") or "." not in what:
+            what = "index.html"
 
         if not any(what in s for s in static_content):
             raise tornado.web.HTTPError(404)

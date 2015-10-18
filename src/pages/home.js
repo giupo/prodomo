@@ -9,6 +9,7 @@ export default React.createClass({
     app.router.history.navigate('/logout');
   },
 
+
   render () {
     console.log("HomePage called")
     return  (

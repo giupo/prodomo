@@ -10,10 +10,10 @@ import HomePage from './pages/home';
 export default Router.extend({
   routes: {
     '': 'public',
-    '/repos': 'repos',
-    '/otherpage': 'otherpage',
-    '/login' : 'login',
-    '/logout' : 'logout'
+    'repos': 'repos',
+    'otherpage': 'otherpage',
+    'login' : 'login',
+    'logout' : 'logout'
 	},
 
   public () {
@@ -30,7 +30,7 @@ export default Router.extend({
   },
 
   login() {
-    console.log("Router::login called")
+    console.log("Router::login called");
     ReactDom.render(<HomePage/>, document.body);
   },
 

@@ -11,13 +11,13 @@ app.extend({
     init() {
         console.log('app starting');
         this.router = new Router();
-        this.router.history.start();
-        this.trigger('AppInit');
+        this.router.history.start({pushState: true});
+        this.trigger('AppInit', 'ciula');
     }
 });
 
-app.on('AppInit', ()=> {
-    console.log('App started');
+app.on('AppInit', (data)=> {
+  console.log('App started ' + data);
 });
 
 app.on('hello', (data) => {
