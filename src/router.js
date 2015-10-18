@@ -30,6 +30,7 @@ export default Router.extend({
   },
 
   login() {
+    console.log("Router::login called")
     ReactDom.render(<HomePage/>, document.body);
   },
 

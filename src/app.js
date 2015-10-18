@@ -1,6 +1,6 @@
 import app from 'ampersand-app';
 import styles from './styles/main.styl';
-//import 'octicons/octicons/octicons.css';
+import 'octicons/octicons/octicons.css';
 import Router from './router';
 
 // exposes `app` for console usage

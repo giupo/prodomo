@@ -10,6 +10,7 @@ export default React.createClass({
   },
 
   render () {
+    console.log("HomePage called")
     return  (
         <div className='container'>
           <header role='banner'>

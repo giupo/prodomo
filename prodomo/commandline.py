@@ -1,12 +1,16 @@
 # -*- coding:utf-8 -*-
 import argparse
 
-from prodomo import startServer
+from prodomo import startServer, startDevServer
 from setupapp import setupLogging, setupTornadoHook
 setupLogging()
 setupTornadoHook()
 import logging
 log = logging.getLogger(__name__)
+
+def dev_webapp():
+    startDevServer()
+
 
 def webapp():
     """Lancia il server stack per Prodomo"""

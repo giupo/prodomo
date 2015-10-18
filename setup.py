@@ -73,6 +73,7 @@ setup(
     entry_points = {
         'console_scripts': [
             'prodomo-server=prodomo.commandline:webapp',
+            'prodomo-dev-server=prodomo.commandline:dev_webapp',
         ],
     }
 )

@@ -8,8 +8,9 @@ export default React.createClass({
     event.preventDefault();
     app.router.history.navigate('/login');
   },
-  
+
   render () {
+    console.log("PublicPage called")
     return  (
         <div className='container'>
           <header role='banner'>
