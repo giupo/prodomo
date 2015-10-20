@@ -25,7 +25,8 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 requirements = [
     'tornado',
-    'sqlalchemy'
+    'sqlalchemy',
+    'facebook-sdk'
 ]
 
 test_requirements = [
