@@ -85,8 +85,8 @@ class Application(tornado.web.Application):
             cookie_secret="TheBigBrownFoxJumpsOverTheLazyDog",
             login_url="/auth/login",
             xsrf_cookies=False,
-            facebook_api_key=os.environ['FACEBOOK_API_KEY'],
-            facebook_secret=os.environ['FACEBOOK_SECRET'],
+            facebook_api_key=os.environ.get('FACEBOOK_API_KEY', ''),
+            facebook_secret=os.environ.get('FACEBOOK_SECRET', ''),
             autoescape=None,
             autoreload=True,
             debug=True
