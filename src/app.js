@@ -1,9 +1,12 @@
+'use strict';
+/* jshint unused: false */
+
 import app from 'ampersand-app';
 import styles from './styles/main.styl';
 import 'octicons/octicons/octicons.css';
 import Router from './router';
-import Switch from './models/switch'
-import SwitchCollection from './models/switch'
+import Switch from './models/switch';
+import SwitchCollection from './models/switch';
 
 // exposes `app` for console usage
 window.app = app;

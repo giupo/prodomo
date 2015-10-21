@@ -1,3 +1,5 @@
+'use strict';
+
 import app from 'ampersand-app';
 import React from 'react';
 
@@ -11,8 +13,9 @@ export default React.createClass({
 
 
   render () {
-    console.log("HomePage called")
+    console.log('HomePage called');
     return  (
+        /* jshint ignore:start */
         <div className='container'>
           <header role='banner'>
             <h1>Labelr</h1>
@@ -24,6 +27,7 @@ export default React.createClass({
               </a>
           </div>
         </div>
+        /* jshint ignore:end */
     );
   }
 });

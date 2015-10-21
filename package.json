@@ -8,9 +8,11 @@
     "start": "webpack-dev-server",
     "prebuild": "rm -rf public && mkdir public",
     "build": "NODE_ENV=production webpack",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "browserify tests/js/index.js | tape-run",
     "deploy": "surge -p public -d prodomo.surge.sh",
-    "yolo": "npm run build && npm run deploy"
+    "yolo": "npm run build && npm run deploy",
+    "lint": "jshint .",
+    "validate": "npm ls"
   },
   "author": "Giuseppe Acito <giuseppe.acito@gmail.com>",
   "license": "MIT",
@@ -29,7 +31,9 @@
     "file-loader": "^0.8.4",
     "hjs-webpack": "^2.14.1",
     "json-loader": "^0.5.3",
+    "octicons": "^3.1.0",
     "postcss-loader": "^0.6.0",
+    "precommit-hook": "^3.0.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-hot-loader": "^1.3.0",
@@ -42,27 +46,17 @@
     "webpack-dev-server": "^1.12.0",
     "yeticss": "^7.0.5"
   },
-  "jsintConfig": {
-    "browser": true,
-    "jquery": true,
-    "node": true,
-    "esnext": true,
-    "camelcase": true,
-    "eqeqeq": true,
-    "indent": 2,
-    "latedef": true,
-    "maxlen": 80,
-    "newcap": true,
-    "quotmark": "single",
-    "strict": true,
-    "undef": true,
-    "unused": true,
-    "eqnull": true,
-    "asi": false,
-    "expr": true,
-    "loopfunc": true,
-    "evil": true,
-    "curly": false,
-    "white": true
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ],
+  "devDependencies": {
+    "ampersand-state": "^4.6.0",
+    "browserify": "^11.2.0",
+    "phantomjs": "^1.9.18",
+    "run-browser": "^2.0.2",
+    "tape": "^4.2.2",
+    "tape-run": "^1.1.0"
   }
 }

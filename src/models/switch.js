@@ -1,4 +1,6 @@
-import app from 'ampersand-app'
+'use strict';
+
+import app from 'ampersand-app';
 import AmpersandModel from 'ampersand-model';
 import Collection from 'ampersand-collection';
 import restMixin from 'ampersand-collection-rest-mixin';
@@ -10,7 +12,7 @@ var Switch = AmpersandModel.extend({
     pin: 'integer',
     description: 'string'
   }
-})
+});
 
 var SwitchCollection = Collection.extend(underscoreMixin, restMixin, {
     url: '/api/v1/switch',
