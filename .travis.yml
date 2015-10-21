@@ -3,13 +3,15 @@
 language: python
 
 python:
-  - "3.3"
   - "2.7"
-  - "2.6"
-  - "pypy"
+before_install:
+  - "curl --silent --location https://deb.nodesource.com/setup_0.12 | sudo bash -"
+  - sudo apt-get install --yes nodejs build-essential
 
 # command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install: pip install -q -e .
+install:
+  - pip install -q -e .
+  - npm -i
 
 # command to run tests, e.g. python setup.py test
-script: python setup.py test
+script: npm run test && python setup.py test

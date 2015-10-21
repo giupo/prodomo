@@ -1,5 +1,7 @@
 apipkg==1.4
 argh==0.26.1
+backports.ssl-match-hostname==3.4.0.2
+certifi==2015.9.6.2
 CherryPy==3.8.0
 colorama==0.3.3
 coverage==4.0.1
@@ -8,6 +10,7 @@ docopt==0.6.2
 enum34==1.0.4
 eventlet==0.17.4
 execnet==1.4.1
+facebook-sdk==0.4.0
 Flask==0.10.1
 glob2==0.4.1
 greenlet==0.4.9
@@ -22,8 +25,7 @@ parse==1.6.6
 parse-type==0.3.4
 pathtools==0.1.2
 pluggy==0.3.1
-## !! Could not determine repository location
-prodomo==0.0.1
+-e git+git@bitbucket.org:giupo/prodomo.git@1a2f332f8de10bd92be82cdf7450b6827cdd79cd#egg=prodomo-master
 py==1.4.30
 pytest==2.8.2
 pytest-bdd==2.15.0
@@ -35,6 +37,8 @@ pytest-xdist==1.13.1
 PyYAML==3.10
 selenium==2.48.0
 six==1.10.0
+SQLAlchemy==1.0.8
+tornado==4.2.1
 tox==2.1.1
 virtualenv==13.1.2
 watchdog==0.8.3
