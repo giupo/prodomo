@@ -25,7 +25,6 @@ parse==1.6.6
 parse-type==0.3.4
 pathtools==0.1.2
 pluggy==0.3.1
--e git+git@bitbucket.org:giupo/prodomo.git@1a2f332f8de10bd92be82cdf7450b6827cdd79cd#egg=prodomo-master
 py==1.4.30
 pytest==2.8.2
 pytest-bdd==2.15.0
