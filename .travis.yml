@@ -10,7 +10,7 @@ before_install:
 # command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install:
   - pip install -r requirements.txt
-  - npm -i
+  - npm install
 
 # command to run tests, e.g. python setup.py test
 script: npm run test && python setup.py test
